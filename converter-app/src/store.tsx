@@ -7,7 +7,8 @@ export const useConverterStore = create((set) => ({
   convertedAmount: 38.7,
   conversionDate: '2020-12-01',
   history: [],
-  
+  rates: {},
+
   setAmount: (amount) => set({ amount }),
   setCurrencyFrom: (currency) => set({ currencyFrom: currency }),
   setCurrencyTo: (currency) => set({ currencyTo: currency }),
@@ -16,7 +17,6 @@ export const useConverterStore = create((set) => ({
 
   addToHistory: (entry) =>
     set((state) => ({ history: [...state.history, entry] })),
-  
+
   clearHistory: () => set({ history: [] }),
 }));
-
