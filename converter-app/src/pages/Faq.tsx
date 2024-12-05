@@ -1,7 +1,5 @@
 import React from 'react';
 
-export function Faq() {
-  return(
-     <div>Faq</div>
-  )
+export function Faq(): JSX.Element {
+  return <div>Faq</div>;
 }

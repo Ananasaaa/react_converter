@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-export function Contacts(): JSX.Element{
-  return(
-  <div>Contacts</div>
-  )
+export function Contacts(): JSX.Element {
+  return <div>Contacts</div>;
 }
